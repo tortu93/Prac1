@@ -32,7 +32,7 @@ public class ClientRestController {
     }
 
     @PostMapping("/save")
-    public Client save(Client client){
+    public Client save(@RequestBody Client client){
         return clientService.save(client);
     }
 

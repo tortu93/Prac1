@@ -32,7 +32,7 @@ public class ToolRestController {
     }
 
     @PostMapping("/save")
-    public Tool save(Tool tool){
+    public Tool save(@RequestBody Tool tool){
         return toolService.save(tool);
     }
 
